@@ -32,7 +32,12 @@ class _JogoState extends State<Jogo> {
                   fontWeight: FontWeight.bold,
                 ),
               )),
-          Image.asset('images/padrao.png'),
+          GestureDetector(
+            onTap: () {
+              print("clicado!");
+            },
+            child: Image.asset("images/padrao.png"),
+          ),
           Padding(
               padding: EdgeInsets.only(top: 32, bottom: 16),
               child: Text(
